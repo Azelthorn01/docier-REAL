@@ -1,0 +1,21 @@
+
+@mixin flexbox ($display:flex, $justify-content: space-between, $height:5%, $align-items: center, $flex-wrap: wrap)
+{
+    display: $display;
+    justify-content: $justify-content;
+    height: $height;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+}
+@mixin flex-horizontale ($display:flex, $justify-content: space-between,$flex-direction: row, $flex-wrap: wrap)
+{
+    display: $display;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+}
+@mixin flex-verticale ($height:5%, $align-items: center)
+{
+    height: $height;
+    align-items: $align-items;
+}

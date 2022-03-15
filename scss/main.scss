@@ -1,0 +1,764 @@
+@import "scss/mixins.scss"; 
+@import "scss/variable.scss"; 
+
+/****NAV reseau sociaux****/
+
+.box-media {
+    width: 100%;
+    @include flexbox(flex,space-between,2rem,center,wrap);
+    background-color: $bg-marron-foncer;
+}
+.box-account {
+    margin-right: 6rem;
+    line-height: 0rem;
+    @include flexbox(flex,space-between,2rem,center,wrap);
+    width: 11.2rem;
+    color: $bg-marron-claire;
+}
+.box-account span {
+    color: white;
+}
+.icone-media {
+    line-height: 1rem;
+    height: 1.5rem;
+    width: 8rem;
+    background-color: $bg-marron-foncer;
+    margin-left: 8%;
+}
+.icone-media i {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: white;
+    margin-left: 0.7rem;
+}
+
+/****NAV seach bar****/
+
+.titre-cafe span {
+    color: $bg-marron-claire;  
+}
+
+.cafe-picture {
+  width: 2rem;  
+}
+
+.Nav-search-bar
+{
+    margin-left: 5%;
+    height: 8rem;
+    @include flexbox(flex,space-around,6rem,center,wrap);
+    
+
+    & .seach-bar {
+        @include flexbox(flex,center,6rem,center,wrap);
+        height: 6rem;
+        line-height: 6rem;
+        width: 50%;
+    }
+
+    & .seach-bar button {
+        height: 3.5rem;
+        line-height: 3rem;
+        border: none;
+    }
+
+    & .seach-bar input {
+        border: 1px solid $bg-gris-claire;
+        height: 3.2rem;
+        line-height: 1rem;
+        opacity: 0.2;
+        width: 60%;
+    }
+
+    & .seach-bar i {
+        border: 0.2px solid $bg-gris-claire_opacity;
+        height: 3.2rem;
+        line-height: 3rem;
+        color: $bg-gris-claire;
+        width: 3rem;
+        position: relative;
+    }
+
+    & .seach-bar i::before {
+        position: absolute;
+        left: 1rem;
+        color: $bg-gris-claire;
+    }
+}
+
+    .shopping-carts
+
+    {
+        border: 0.2px solid $bg-gris-claire_opacity;
+        @include flexbox(flex,space-between,5rem,center);
+        flex-wrap: nowrap;
+        & p {
+            margin:0;
+        }
+        & i {
+            font-size: 1.5rem;
+            height: 3rem;
+            line-height: 3rem;
+            width: 3rem;
+            position: relative;
+            color: $bg-gris-claire;
+        }
+        & i::before {
+            position: absolute;
+            left: 0.5rem;
+            top: -0.25rem;
+        }
+        & span {
+            font-size: 1.25rem;
+            color:$bg-marron-claire;
+        }
+    }
+
+    .box-heart
+
+    {
+        @include flexbox(flex,space-around,6rem,center,wrap); 
+        width: 10%;
+        
+        & .icone-heart i {
+            color: $bg-gris-claire;
+            font-size: 1.5rem;
+            height: 3rem;
+            line-height: 3rem;
+            width: 2.6rem;
+            position: relative;
+            border: 1px solid $bg-gris-claire_opacity;
+        }
+
+        & i::before {
+        position: absolute;
+        left: 0.5rem;
+        
+        }
+    }
+
+/****NAV Categories****/
+
+    .Nav-Categories {
+        @include flexbox(flex,space-between,3rem,center,wrap); 
+        background-color: $bg-marron-foncer;
+        color: white;
+        padding-left: 3%;
+    }
+    .box-categories {
+        @include flexbox(flex,space-around,3rem,center,wrap);
+        line-height: 1rem;
+        width: 16rem; 
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        background-color: $bg-marron-claire;
+    }
+    .box-categories i, .menu-sandwich {
+        color: white;  
+    }
+    .menu-nav {
+        @include flexbox(flex,space-between,3rem,wrap); 
+        margin-left: 8rem;
+    }
+    .menu-nav p {
+        margin-right: 6rem;
+    }
+    .menu-sandwich {
+        margin-right: 6.5rem;
+        padding: 15px;
+        background-color:$bg-marron-claire;
+    }
+    .cafe-picture {
+        color: white;
+    }
+
+/****NAV Cafe-Latte****/
+
+    .box-cafe-latte {
+        @include flexbox(flex,space-between,50rem,wrap); 
+        position: relative;
+    }
+
+    .cafe-servie img {
+        object-fit: cover;
+        width: 35rem;
+        height: 50rem;
+        position: relative;
+    }
+
+
+/****FEATURE Cafe-Latte****/
+    .features-cafe-latte {
+        height: 33rem;
+        width: 20rem;
+        background-color: white;
+        position: absolute;
+        bottom: 14.5rem;
+        left: 15rem;
+        border: 1px solid $bg-gris-claire_opacity;
+    }
+    .text-feature {
+        @include flexbox(flex,space-between,3rem,center,wrap);
+        width: 6rem;
+        background-color: $bg-marron-foncer; 
+        color: white; 
+
+        & p {
+            margin-right: 1rem;
+        }
+
+        & i {
+            margin-left: 0.3rem;
+        }
+    }
+
+    .features-cafe-latte img {
+       object-fit: cover;
+       height: 13rem;
+       width: 12rem;
+    }
+    .picture-paquet-cafe {
+        @include flexbox(flex,center,center,wrap); 
+    }
+    .stars-texte-stars {
+        @include flexbox(flex,space-between,2rem,center,wrap);
+        width: 80%;   
+        margin: auto;
+    }
+    .stars-features :nth-child(1), .stars-features :nth-child(2), .stars-features :nth-child(3), .stars-features :nth-child(4) {
+        color: $bg-marron-foncer;
+    }
+    .stars-features :nth-child(5) {
+        color: $bg-gris-claire;
+    }
+    .barre-separation {
+        width: 80%;
+        height: 1px;
+        color: $bg-gris-claire_opacity;
+        background-color: $bg-gris-claire_opacity;
+        margin: auto;
+        margin-top: 1rem 
+    }
+    .price-features {
+        
+        @include flexbox(flex,space-between,2rem,center,wrap);
+        width: 80%;   
+        margin: auto;
+
+        & span {
+            text-decoration: line-through;
+            color: $bg-marron-claire;
+        }
+
+        & button {
+           border: none;
+           color: white;
+           background-color: $bg-marron-claire;
+           font-size: 1.2rem;
+           padding: 10px;
+        }
+    }
+    .arabica-stars h1 {
+        text-align: start;
+        margin-left: 2rem;
+    }
+    .delais-features {
+        border: 1px solid $bg-gris-claire_opacity; 
+        width: 80%;  
+        color: $bg-gris-claire;
+        text-align: center;
+        margin: auto;
+    }
+
+    .cafe-en-grain img {
+        object-fit: cover;
+        width: 35rem;
+        height: 25rem;  
+    }
+    
+    .text-cafe-latte {
+        width: 43rem;
+        @include flexbox(flex,space-around,50rem,center,wrap);
+        flex-direction: column;
+        position: relative;
+
+        & .texte {
+            margin-top: 5rem; 
+        }
+
+        & span {
+            color: $bg-marron-foncer;
+            font-size: bold; 
+        }
+
+        & span.one {
+            font-size: 1.5rem; 
+        }
+
+        & button {
+            border: none; 
+            padding:15px;
+            background-color: $bg-marron-claire;
+            color: white;
+        }
+
+        & .arrows {
+            @include flexbox(flex,space-between,2rem,center,wrap);
+            width: 6.5rem;
+        }
+
+        & .arrow-left, .arrow-right {
+            padding: 15px;
+            border: 1px solid $bg-gris-claire_opacity;
+        }
+       
+
+    }
+   
+   /**Big-brother!**/   
+
+    .Big-brother {
+        width: 80%;
+        margin: auto;
+    }
+
+ /**SERVICE (PROPOSER)**/ 
+
+    .services {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        @include flexbox(flex,space-between,10rem,center,wrap);  
+        
+    }
+    .services div {
+        padding: 15px; 
+        border: 1px solid $bg-gris-claire_opacity; 
+    }
+    .services img {
+        width: 5rem;  
+        height: 5rem;
+    }
+    .services p {
+        text-align: center; 
+        margin: 0;  
+        margin-top: 0.5rem;
+    }
+
+/**PRODUIT (PROPOSER)**/ 
+
+    .small-brother .paquet-cafe {
+        @include flexbox(flex,space-between,17rem,wrap);
+        width: 48%;
+        border: 1px solid $bg-gris-claire_opacity; 
+    }
+    .box-text-feature {
+        @include flexbox(flex,flex-start,center,wrap);
+        flex-direction: column;
+        width: 18.5%;
+    }
+    .box-pdt-features {
+        @include flexbox(flex,space-between,wrap); 
+        width: 80%;  
+    }
+    .price-pdt-features {
+        @include flexbox(flex,space-between,wrap);
+        width: 80%; 
+
+        & .event-price {
+            color: $bg-marron-claire;
+            text-decoration: line-through;
+            font-size: 20px;
+        }
+
+        & .price-pdt {
+            @include flexbox(flex,space-between,wrap);
+            flex-direction: column; 
+            height: 3rem;
+        }
+
+        & button {
+            border: none; 
+            padding:15px;
+            background-color: $bg-marron-claire;
+            color: white;  
+            
+            & i {
+                margin-left: 1rem;
+            }
+        }
+    }
+    
+    .texte-pdt {
+        width: 80%; 
+    }
+    .texte-stars {
+     color: $bg-gris-claire;   
+    }
+    .box-content-pdt {
+        @include flexbox(flex,center,wrap);
+        flex-direction: column;
+        width: 80%; 
+    }
+    .picture-paquet-cafe {
+        position: relative;
+        margin-top: 1rem;
+        @include flexbox(flex,center,wrap);  
+    }
+    .box-text-feature img {
+       position: absolute;
+       width: 5rem;    
+       height: 5rem;
+       left: 3rem;
+       top: -0.5rem;
+    }
+    .small-brother {
+        @include flexbox(flex,space-between,wrap);
+        width: 100%;
+    }
+
+/***PICTURE BREAKFEAST***/
+
+    .picture-breakfeast img {
+        width: 46rem;
+        height: 30rem;
+    }
+    .picture-breakfeast {
+        position: relative;
+    }
+    .text-into-picture {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: white;
+    }
+    .text-into-picture button {
+        border: none; 
+        padding:15px;
+        background-color: white;
+        color: $bg-marron-claire; 
+    }
+    .brother-breakfeast {
+        @include flexbox(flex,space-between,30rem,wrap);
+        width: 100%;
+    }
+
+    /***TOP PICKS***/
+
+
+    .Top-pick {
+        @include flexbox(flex,space-between,center,wrap); 
+    }
+    .button-top-pick {
+        @include flexbox(flex,center,center,wrap);
+        width: 18rem;
+        height: 2rem;
+        align-self: center;
+    }
+    .button-top-pick button {
+        padding:15px;
+        border:none;
+        margin-left: 0.5rem;
+    }
+    .button-top-pick :first-child {
+        background-color:$bg-marron-foncer;
+        color: white;
+    }
+    .separation-du-toppicks {
+        height: 0.2rem;
+        position: relative;
+        background-color: $bg-gris-claire_opacity;
+    }
+    .separation-du-toppicks::after {
+        content: "";
+        height: 0.2rem;
+        position: absolute;
+        left: 0;
+        width: 4rem;
+        background-color:$bg-marron-claire;
+    }
+
+    /***SEGOND PDT***/
+
+    .Paquet-segond-pdt {
+        margin-top: 2rem; 
+        @include flexbox(flex,center,center 20rem,wrap); 
+        flex-direction: column;
+        width: 20rem;
+        text-align: center;
+        
+    }
+    .Paquet-segond-pdt button {
+        padding:10px;
+        border:none;
+        width: 100%;
+    }
+    .button-ADD {
+        background-color: $bg-marron-claire;
+        color: white;
+    }
+    .button-QUICK {
+        color: $bg-marron-claire;
+        background-color: white;  
+    }
+    .angry-brother {
+        @include flexbox(flex,space-between,center, 20rem,wrap);
+        width: 100%;  
+    }
+
+
+/***FOOTER PDT***/
+
+.box-footer {
+    @include flexbox(flex,space-between,center,wrap);
+    flex-direction: row;  
+    width: 100%;
+    height: 40rem;
+}
+.picture-footer {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+}
+.picture-footer img {
+     width: 44rem;
+    height: 40rem;
+    object-fit: cover;
+}
+.text-footer {
+    position: absolute;
+    bottom:15rem;
+    left: 15rem;
+}
+.box-picture-footer {
+    @include flexbox(flex,wrap);
+   height: 20rem;
+   width: 75rem;    
+}
+.box-picture-footer img {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+
+/***MEDIA QUERY***/
+
+//responsive 1200px
+@media #{$large-up} {
+    .icone-heart {
+        display: none;
+    }
+    .box-cafe-latte {
+        flex-wrap: nowrap;
+    }
+    .cafe-en-grain, .cafe-en-grain img {
+        display: none;
+    }
+    .brother-breakfeast {
+        height: 100%;
+        flex-direction: column;
+    }
+    .picture-breakfeast {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .picture-breakfeast img {
+        width: 100%;
+    }
+    .angry-brother {
+        width: 90%;
+        margin: auto;
+    }
+    .picture-footer img {
+        width: 74.5rem;
+    }
+    .box-footer {
+        width: 100%;
+        display: block;
+    }
+    .text-footer {
+        left: 30rem;
+
+        & button {
+            border: none;
+            padding: 15px;
+            color: $bg-marron-claire;
+        }
+    }
+
+}
+//responsive 768px
+@media #{$medium-up} {
+    .shopping-carts {
+
+        margin-left: 3rem;
+        height: 3.5rem;
+    }
+    .Nav-search-bar {
+
+    margin-left: 0rem;
+    @include flexbox(flex,flex-start,center,wrap);
+    }
+
+    .seach-bar i {
+
+        display: none;
+    }
+
+    .menu-nav {
+
+        margin-left: 0rem;
+        height: 8rem;
+        width: 44rem;
+    }
+    .menu-nav :nth-child(4) {
+
+     margin-left: 1rem;
+
+    }
+.box-categories {
+    
+    margin-left: 1rem;
+}
+
+    .Nav-Categories {
+
+        @include flexbox(flex,flex-start,nowrap);
+        padding-left: 0rem;
+        height: 8rem;
+        
+
+        & .menu-sandwich {
+            display: none;
+        }
+
+    }
+    .features-cafe-latte {
+
+        left: 2rem;
+    }
+    .text-cafe-latte {
+
+        margin-left: 2rem;
+    }
+    .cafe-servie img {
+
+        width: 25rem;
+    }
+    .services {
+
+        flex-direction: column;
+        height: 22rem;
+    }
+    .small-brother { 
+        height: 104rem;
+    }
+    
+    .small-brother .paquet-cafe {
+        height: 33rem;
+
+    }
+    .small-brother .price-pdt-features {
+        margin-top: 2rem;
+
+    }
+    .small-brother .picture-paquet-cafe img {
+        left: 7rem;
+        top:-1.5rem;
+
+    }
+    .Paquet-segond-pdt {
+        width: 100%;
+    }
+    .text-footer {
+        left: 19rem;
+
+        & h1 { 
+        color: white;
+        }
+    }
+    .box-picture-footer { 
+        width: 74rem;
+    }
+
+}
+//responsive 576px
+@media #{$smoll-up} { 
+
+    .Nav-search-bar { 
+        height: 19rem;
+        width: 34.75rem;
+        flex-direction: column;
+
+    }
+    .Nav-search-bar .seach-bar { 
+        width: 27rem;
+    }
+    .seach-bar i { 
+        display: flex;
+    }
+    .menu-nav :nth-child(3) {
+        margin-left: 1rem;
+    }
+    .box-categories { 
+        width: 16rem;
+    }
+    .box-cafe-latte { 
+        flex-wrap: wrap;
+        height: 80rem;
+    }
+    .features-cafe-latte { 
+        bottom: 36rem;
+        left: 8rem;
+    }
+    .text-cafe-latte {
+        height: 27rem;
+    }
+    .text-cafe-latte .texte {
+        margin-top: 0rem;
+    }
+    .cafe-servie img { 
+        width: 35rem;
+    }
+    .small-brother { 
+        width: 39rem;
+        align-items: flex-start;
+        margin-left: 5rem;
+        flex-direction: column;
+        height: 100%;
+    }
+    .box-content-pdt { 
+        height: 29rem;
+    }
+    .small-brother .paquet-cafe { 
+        margin-bottom: 1rem;
+    }
+    .small-brother .picture-paquet-cafe img {
+        left: 7rem;
+       top: -3.5rem;
+    }
+    .angry-brother {
+        @include flexbox(flex,center);   
+    }
+    .Paquet-segond-pdt {
+        width: 120%;
+    }
+    .box-picture-footer {
+        width: 34.75rem;
+    }
+    .box-picture-footer img {
+        width: 34.75rem;
+    }
+
+}
+
+
+    
+   
+
+   
+
+
+    
+
+
